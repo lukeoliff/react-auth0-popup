@@ -60,7 +60,7 @@ module.exports = function(app, config) {
     }, delay());
   });
 
-  app.get("/api/data/movies", authCheck, (req, res) => {
+  app.get("/api/data/movies", /*authCheck,*/ (req, res) => {
     setTimeout(() => {
       res.json(allMovies);
     }, delay());
